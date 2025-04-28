@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
-import Logo from "../../public/images/logo.svg";
+import Logo from "../../public/images/logo.png";
 import Image from "next/image";
 type MenuItem = {
   name: string;
@@ -43,7 +43,7 @@ export default function Navbar() {
             {/* Logo on left */}
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold">
-                <Image src={Logo} alt="logo" className="text-text-color" />
+                <Image src={Logo} width={180} height={100} alt="logo" className="text-text-color" />
               </Link>
             </div>
 
