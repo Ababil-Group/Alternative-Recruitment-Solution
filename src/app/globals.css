@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #001241;
+  --text-color: #eff1f4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --second-color: #693794;
+  /* --second-color: #001856; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #001241;
+    --second-color: #693794;
+    /* --second-color: #001856; */
+    --text-color: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--second-color);
+  color: var(--text-color);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}

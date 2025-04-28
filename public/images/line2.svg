@@ -1,0 +1,19 @@
+<svg width="863" height="537" viewBox="0 0 863 537" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="47.91%" gradientTransform="matrix(.52666 .84963 -.84846 .52738 .66 -.189)" id="hh4ezdjqaa">
+            <stop stop-color="#E50044" offset="0%"/>
+            <stop stop-color="#001F6C" stop-opacity="0" offset="100%"/>
+        </radialGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="d0iqs7zecb">
+            <stop stop-color="#E50044" offset="0%"/>
+            <stop stop-color="#A20E5E" offset="29.02%"/>
+            <stop stop-color="#5E1B78" offset="62.072%"/>
+            <stop stop-color="#001F6C" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M837.396 96.95c-24.787 14.705-56.809 6.558-71.535-18.194-14.727-24.746-6.569-56.73 18.219-71.435 24.78-14.706 56.809-6.56 71.535 18.193 14.72 24.745 6.568 56.73-18.219 71.435" fill="url(#hh4ezdjqaa)" transform="translate(.057)"/>
+        <path d="M816.418 61.59c-5.23 3.103-11.986 1.384-15.093-3.838-3.107-5.221-1.386-11.97 3.844-15.073 5.228-3.102 11.986-1.383 15.093 3.84 3.106 5.22 1.386 11.969-3.844 15.071" fill="#E50044"/>
+        <path fill="url(#d0iqs7zecb)" d="M3.346 536.69 0 531.07 804.716 53.69l3.346 5.62z" transform="translate(.057)"/>
+    </g>
+</svg>

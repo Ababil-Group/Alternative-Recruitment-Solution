@@ -1,0 +1,19 @@
+<svg width="1421" height="883" viewBox="0 0 1421 883" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="47.943%" gradientTransform="matrix(.52629 .84904 -.84576 .52833 .66 -.189)" id="6z3zxawm3a">
+            <stop stop-color="#E50044" offset="0%"/>
+            <stop stop-color="#002E99" stop-opacity="0" offset="100%"/>
+        </radialGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="acz0ei0web">
+            <stop stop-color="#E50044" offset="0%"/>
+            <stop stop-color="#A20E5E" offset="29.02%"/>
+            <stop stop-color="#5E1B78" offset="62.072%"/>
+            <stop stop-color="#001F6C" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M1379.653 155.267c-39.796 23.552-91.208 10.505-114.852-29.137-23.644-39.63-10.546-90.854 29.25-114.406 39.786-23.552 91.21-10.504 114.853 29.137 23.633 39.631 10.546 90.854-29.25 114.406" fill="url(#6z3zxawm3a)" transform="translate(.33)"/>
+        <path d="M1345.383 100.25c-7.626 4.512-17.478 2.012-22.009-5.584-4.53-7.595-2.02-17.41 5.606-21.924 7.624-4.513 17.478-2.013 22.008 5.584 4.529 7.594 2.021 17.41-5.605 21.923" fill="#E50044"/>
+        <path fill="url(#acz0ei0web)" d="M5.535 882.198 0 872.924 1331.177 85.198l5.535 9.274-43.371 25.665z" transform="translate(.33)"/>
+    </g>
+</svg>
