@@ -43,7 +43,13 @@ export default function Navbar() {
             {/* Logo on left */}
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold">
-                <Image src={Logo} width={180} height={100} alt="logo" className="text-text-color" />
+                <Image
+                  src={Logo}
+                  width={180}
+                  height={100}
+                  alt="logo"
+                  className="text-text-color"
+                />
               </Link>
             </div>
 
@@ -116,7 +122,7 @@ export default function Navbar() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden bg-white/95 backdrop-blur-sm">
+              className="md:hidden bg-background backdrop-blur-sm">
               <div className="container mx-auto px-4 py-2">
                 {menuItems.map((item, index) => (
                   <div key={index} className="py-2 border-b border-gray-100">
@@ -124,7 +130,7 @@ export default function Navbar() {
                       <>
                         <button
                           onClick={() => toggleDropdown(index)}
-                          className="flex justify-between items-center w-full text-gray-700 font-medium">
+                          className="flex justify-between items-center w-full text-white font-medium">
                           {item.name}
                           <motion.span
                             animate={{
@@ -144,7 +150,7 @@ export default function Navbar() {
                                 <a
                                   key={subIndex}
                                   href={subItem.link}
-                                  className="block py-2 text-gray-600 hover:text-gray-900">
+                                  className="block py-2 text-white hover:text-gray-900">
                                   {subItem.name}
                                 </a>
                               ))}
@@ -155,7 +161,7 @@ export default function Navbar() {
                     ) : (
                       <a
                         href={item.link}
-                        className="block text-gray-700 font-medium">
+                        className="block text-white font-medium">
                         {item.name}
                       </a>
                     )}
