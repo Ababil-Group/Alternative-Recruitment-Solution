@@ -10,6 +10,7 @@ interface BannerProps {
   buttonColor?: string;
   buttonHoverColor?: string;
   className?: string;
+  onClick?: () => void;
 }
 
 export const Banner: React.FC<BannerProps> = ({
@@ -19,6 +20,7 @@ export const Banner: React.FC<BannerProps> = ({
   textColor = "text-foreground",
   buttonColor = "bg-red-700",
   buttonHoverColor = "bg-primary/90",
+  onClick,
   className,
 }) => {
   return (
@@ -66,6 +68,7 @@ export const Banner: React.FC<BannerProps> = ({
           </h1>
 
           <motion.button
+            onClick={onClick}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className={cn(

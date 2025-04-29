@@ -22,7 +22,12 @@ export default function Synchroniztion() {
                 makes us the preferred partner for all stakeholders in the
                 service pipeline, as you&apos;ll be able to reliably collect and
                 index data from all major Vendor Management Systems on the
-                market today.
+                market today. Supercharge your organization’s performance with
+                up-to-the-minute job syncing that reaches your recruiters
+                quicker than the competition. Bring in timesheets, expenses,
+                SOWs and more to capture all key transactions with your client.
+                Customize handling of incoming records to attune data to your
+                team&apos;s best practices and workflows.
               </p>
             </div>
 
@@ -55,7 +60,7 @@ export default function Synchroniztion() {
           <div className="lg:w-1/2">
             <div className="rounded-xl p-8 flex items-center justify-center h-96">
               <Image
-                src="/images/Synchroniztion.svg"
+                src="/images/Synchroniztion.png"
                 alt="ATS Dashboard"
                 width={600}
                 height={400}

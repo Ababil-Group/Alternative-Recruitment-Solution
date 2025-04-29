@@ -20,15 +20,16 @@ export default function Contact() {
         {/* Left Side */}
         <div className="flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Get in Touch Today
+            Connect With Us
           </h1>
           <p className="text-lg text-white mb-6">
-            We&apos;re excited to hear from you. For a faster response, please
-            pick the topic of your inquiry from the form&apos;s drop-down menu.
+            We’re here to help and excited to hear from you. To ensure a quicker
+            response, please select the topic of your inquiry using the
+            drop-down menu on the form.
           </p>
 
           {/* Support and Demo Links */}
-          <div className="text-white mb-8">
+          {/* <div className="text-white mb-8">
             <p className="mb-2">
               Are you looking for technical support?{" "}
               <a href="/support" className="text-red-400 underline">
@@ -41,25 +42,9 @@ export default function Contact() {
                 Request Demo
               </a>
             </p>
-          </div>
+          </div> */}
 
           {/* Achievements Badges */}
-          <div className="flex flex-wrap gap-4 mt-8">
-            {/* Example Badges */}
-            <Image
-              src="/images/badge1.png"
-              width={80}
-              height={80}
-              alt="badge"
-            />
-            <Image
-              src="/images/badge2.png"
-              width={80}
-              height={80}
-              alt="badge"
-            />
-            {/* Add more badges */}
-          </div>
         </div>
 
         {/* Right Side - Contact Form */}
@@ -98,9 +83,6 @@ export default function Contact() {
               </option>
               <option className="text-gray-800" value="Support">
                 Support
-              </option>
-              <option className="text-gray-800" value="Demo">
-                Demo Request
               </option>
             </select>
             <label className="text-white">Message</label>

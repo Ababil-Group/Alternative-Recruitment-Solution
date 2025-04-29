@@ -24,13 +24,13 @@ export default function Navbar() {
 
   const menuItems: MenuItem[] = [
     { name: "Home", link: "/" },
-    { name: "Solution", link: "/solution" },
+    { name: "Our Solutions", link: "/solution" },
     {
       name: "Support",
       dropdown: [
         { name: "Contact Us", link: "/contact" },
-        { name: "Support", link: "/support" },
-        { name: "FAQ", link: "/faq" },
+        { name: "Help Center", link: "/support" },
+        { name: "FAQs", link: "/faq" },
       ],
     },
   ];
@@ -97,9 +97,6 @@ export default function Navbar() {
                   )}
                 </div>
               ))}
-              <button className="text-text-color hover:text-blue-300 font-medium transition-colors">
-                Request Demo
-              </button>
             </div>
 
             {/* Mobile menu button */}

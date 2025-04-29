@@ -6,32 +6,32 @@ export default function recruitingrlatform() {
     {
       title: "Applicant Tracking System",
       description:
-        "Award-winning recruitment software that has led the industry for over 20 years.",
+        "Award-winning recruitment software that has set the standard in the industry for  years, helping organizations streamline their hiring process.",
     },
     {
       title: "Contract Relationship Management",
       description:
-        "Refined client services and next-level business development.",
+        " Refined client services paired with next-level business development tools, designed to enhance relationships and drive growth.",
     },
     {
       title: "Onboarding",
       description:
-        "Streamline every hiring scenario with intelligent, automated systems.",
+        " Simplify every hiring scenario with intelligent, automated onboarding systems, making the process smoother and more efficient.",
     },
     {
       title: "Financials",
       description:
-        "A back office suite built by staffing experts for the unique contours of your business.",
+        " A comprehensive back office suite crafted by staffing experts, tailored to the unique needs of your staffing business",
     },
     {
       title: "VMS Synchronization",
       description:
-        "Trusted synchronisation programs to set you up for top-tier performance.",
+        "Trusted VMS synchronization tools to ensure seamless integration and set you up for top-tier operational performance.",
     },
     {
       title: "Reports & Analytics",
       description:
-        "Spark productivity and insights with a wide array of dashboards, reports and BI tools.",
+        " Boost productivity and gain valuable insights with a wide range of customizable dashboards, reports, and business intelligence tools.",
     },
   ];
 
@@ -48,17 +48,16 @@ export default function recruitingrlatform() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-text-color mb-4">
-            The all-in-one recruiting platform
+            Your All-in-One Recruiting Platform
           </h1>
-          <p className="text-xl text-text-color max-w-3xl mx-auto">
-            JobDiva&apos;s industry leading technology helps thousands of
-            recruiters maximize their business potential.
-            <br />
-            Partner with us for a comprehensive and unmatched suite of staffing
-            tools.
+          <p className="text-lg mt-2 text-text-color max-w-3xl mx-auto">
+            Recruitment An Alternative Solution’s industry-leading technology
+            empowers recruiters to unlock their full business potential. Partner
+            with us to access a comprehensive suite of staffing tools that’s
+            unmatched in the industry designed to support your recruitment
+            efforts and drive success at every level.
           </p>
         </div>
-
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (

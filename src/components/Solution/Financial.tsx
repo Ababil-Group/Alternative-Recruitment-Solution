@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
+// import { FiArrowRight } from "react-icons/fi";
 
 export default function Financial() {
   return (
@@ -33,26 +33,27 @@ export default function Financial() {
                 FINANCIALS
               </span>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4">
-                A strong backbone for your business
+                A Solid Foundation for Your Business
               </h1>
 
               <div className="space-y-6 mt-8">
                 <p className="text-lg text-gray-600">
-                  Our native back office suite equips your team with robust
+                  Our native back-office suite equips your team with powerful
                   modules that provide real-time insights into the financial
-                  impact of front office activities. Having a fully integrated
-                  ecosystem means dynamic collaboration across your
-                  organization, allowing for better pipelining, forecasting and
-                  tracking of real profitability. Each step of the billing cycle
-                  supports extensive customization, so you can meet even the
-                  most intricate end client requirements for transactional data
-                  handling and presentation. As accrued client knowledge from
-                  your ATS and CRM flows into your financial records, you’ll get
-                  complete clarity into your company’s true financials while
-                  maintaining the highest security and reliability standards.
+                  impact of front-office activities. With a fully integrated
+                  ecosystem, your organization benefits from seamless
+                  collaboration, enhancing pipelining, forecasting, and tracking
+                  of true profitability. Each step of the billing cycle offers
+                  extensive customization, enabling you to meet even the most
+                  complex client requirements for transactional data handling
+                  and presentation.
                 </p>
-
-                <ul className="space-y-4">
+                <p className="text-lg text-gray-600">
+                  As client data from your ATS and CRM flows into your financial
+                  records, you gain clear visibility into your company’s true
+                  financials while ensuring top-tier security and reliability.
+                </p>
+                {/* <ul className="space-y-4">
                   {[
                     "Guide and track your candidates through a traceable paperless, and mobile-friendly process.",
                     "Benefit from encrypted document sharing and signatures and protect everyone's privacy every step of the way.",
@@ -70,7 +71,7 @@ export default function Financial() {
                       <span className="text-gray-700">{item}</span>
                     </motion.li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </motion.div>
           </div>

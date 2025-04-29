@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import social from "../../../public/images/socialdesgin.svg";
+import social from "../../../public/images/socialdesgin.png";
 
 export default function BusinessGrow() {
   return (
@@ -14,17 +14,19 @@ export default function BusinessGrow() {
               INTEGRATIONS
             </span>
             <h1 className="text-4xl mt-4 md:text-5xl font-bold text-text-color mb-6 leading-tight">
-              Grow your business with
-              <br />a strong, open platform
+              Expand Your Business with
+              <br />a Powerful, Open Platform
             </h1>
             <p className="text-lg text-text-color mb-8">
-              Our rich, end-to-end solution comes equipped with everything your
-              organization needs—including partnerships with major job boards
-              and specialty products. As part of our open approach, JobDiva
-              provides built-in integrations to 300+ products and services.
-              Development teams looking to extend functionality even further can
-              use our comprehensive open API suite to explore endless
-              possibilities.
+              Recruitment An Alternative Solution’s robust, end-to-end
+              recruitment solution is equipped with everything your organization
+              needs to thrive including seamless partnerships with major job
+              boards and specialized products. Committed to an open and flexible
+              approach, Recruitment An Alternative Solution offers built-in
+              integrations with a wide range of trusted products and services.
+              For development teams seeking to extend functionality even
+              further, our comprehensive open API suite unlocks endless
+              opportunities for innovation and growth.
             </p>
             {/* <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition">
               Browse 100+ integrations

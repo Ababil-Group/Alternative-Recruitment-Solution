@@ -3,23 +3,29 @@ import React from "react";
 import Image from "next/image";
 import mobileAppScreenshot from "../../../public/images/mobile.png";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { useRouter } from "next/navigation";
 import { Banner } from "@/common/Banner";
 
 export default function MobileApp() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
+  const router = useRouter();
+
+  const handleClick = (path: string) => {
+    router.push(path);
+  };
 
   const slides = [
     {
-      title: "JobDiva App",
-      description: "Complete recruitment solution on your mobile device",
+      title: "Recruitment An  Alternative Solution App",
+      description: "Complete recruitment solution on your mobile device.",
     },
     {
       title: "White-Label App",
-      description: "Custom branded app for your candidates",
+      description: " Custom-branded hiring app for your candidates.",
     },
     {
       title: "TimeDirect App",
-      description: "Easy time and expense tracking for contractors",
+      description: " Quick time and expense tracking for contractors.",
     },
   ];
 
@@ -55,27 +61,18 @@ export default function MobileApp() {
               MOBILE APPS
             </span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-color mb-6 leading-tight">
-              Apps for talent & recruiters
+              Mobile Apps for Talent and Recruiters
             </h1>
             <p className="text-lg text-text-color mb-8 space-y-4">
-              <span className="block">
-                For staffing on the go, download our user-friendly JobDiva
-              </span>
-              <span className="block">
-                mobile app, designed to help your teams perform their
-              </span>
-              <span className="block">
-                essential tasks with ease. Additionally, we offer a white-label
-              </span>
-              <span className="block">
-                applicant and hiring app wrapped in your brand identity, as well
-              </span>
-              <span className="block">
-                as a convenient timedirect app that lets your contractors
-              </span>
-              <span className="block">
-                quickly and easily enter their time and expenses.
-              </span>
+              Stay connected and productive with the{" "}
+              <strong>Recruitment An Alternative Solution mobile app</strong> ,
+              designed to help staffing teams manage essential tasks efficiently
+              anytime, anywhere. We also offer a{" "}
+              <strong>white-label applicant and hiring app</strong> that
+              reflects your brand identity, creating a seamless experience for
+              candidates. Plus, our <strong>Time Direct app</strong> makes it
+              easy for contractors to submit time and expense reports quickly
+              and accurately.
             </p>
 
             {/* Slider Component */}
@@ -124,12 +121,13 @@ export default function MobileApp() {
         </div>
         <Banner
           titleLines={[
-            "The right talent",
-            "at the lowest real cost",
-            "in the shortest timeframe",
+            "Find the Right  ",
+            "Talent—Faster, Smarter,",
+            "and More Cost-Effectively",
           ]}
-          ctaText="Get a Live Demo"
+          ctaText="Get Contacted"
           imageUrl="/images/banner.png" // Optional
+          onClick={() => handleClick("/contact")}
           //   className="custom-class" // Optional additional classes
         />
       </div>

@@ -31,7 +31,9 @@ export default function ContactLocation() {
                       <FiMapPin className="text-blue-600" />
                       Headquarters
                     </h2>
-                    <p className="text-gray-600 mb-2">JobDiva, Inc.</p>
+                    <p className="text-gray-600 mb-2">
+                      Recruitment An Alternative Solution, Inc.
+                    </p>
                     <p className="text-gray-600 mb-2">44 Wall Street</p>
                     <p className="text-gray-600 mb-2">
                       4th floor, New York, NY

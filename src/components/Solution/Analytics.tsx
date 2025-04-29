@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
+// import { FiArrowRight } from "react-icons/fi";
 export default function Analytics() {
   return (
     <section className="min-h-screen z-20 py-16 bg-white">
@@ -12,7 +12,7 @@ export default function Analytics() {
           <div className="lg:w-1/2 flex justify-center min-h-[500px]">
             <div className="relative w-full h-full">
               <Image
-                src="/images/analytics.svg"
+                src="/images/analytics.png"
                 alt="Financial illustration"
                 width={500}
                 height={500}
@@ -32,20 +32,31 @@ export default function Analytics() {
                 REPORTS & ANALYTICS
               </span>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4">
-                Knowledge is power
+                Harness the Power of Knowledge
               </h1>
 
               <div className="space-y-6 mt-8">
                 <p className="text-lg text-gray-600">
-                  JobDiva is loaded with staffing-centric reports and
-                  dashboards. Surface insights and performance patterns while
-                  also enabling deep dives into the behavior of teams, clients,
-                  service groups and more. Nearly every click and data point in
-                  JobDiva is tracked, empowering you to make bold, data-driven
-                  decisions that put you way ahead of the competition.
+                  Recruitment An Alternative Solution provides an extensive set
+                  of staffing-focused reports and dashboards that enable you to
+                  uncover insights and identify performance patterns. Dive deep
+                  into team behaviors, client interactions, service group
+                  metrics, and more. With comprehensive data tracking across the
+                  platform, every click and data point helps you make informed,
+                  data-driven decisions to stay ahead of the competition. Access
+                  a wide range of reports with various data configurations and
+                  visualizations, designed to meet the needs of your staffing
+                  business. Equip your teams and user groups with customized
+                  dashboards to monitor performance, evaluate business health,
+                  and drive discussions. Mini-dashboards embedded in each CRM
+                  record provide real-time summaries of your client
+                  relationships, offering quick insights at a glance. Create and
+                  customize your own dashboards and reports, applying filters
+                  and rules to tailor the data to your needs, and easily share
+                  these insights across teams.
                 </p>
 
-                <ul className="space-y-4">
+                {/* <ul className="space-y-4">
                   {[
                     "Immediately access 1000+ reports serving myriad data configurations, and visualizations informed by our 20+ years of deep immersion in the staffing industry.",
                     "Equip your various teams and user groups with the exactly the right dashboards to assess and understand their performance, conduct business health checks, and drive meetings.",
@@ -63,7 +74,7 @@ export default function Analytics() {
                       <span className="text-gray-700">{item}</span>
                     </motion.li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </motion.div>
           </div>

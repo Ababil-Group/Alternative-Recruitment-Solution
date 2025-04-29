@@ -13,7 +13,6 @@ export default function SolutionHero() {
           playsInline
           className="absolute left-0 top-0 h-full w-full object-cover">
           <source src="/video/solutionhero.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
@@ -25,14 +24,15 @@ export default function SolutionHero() {
             SOLUTIONS
           </span>
           <h1 className="text-3xl md:text-3xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Staffing is in our DNA
+            Staffing is at the Core of What We Do
           </h1>
           <p className="text-lg md:text-xl text-white mb-8">
-            JobDiva&apos;s natively developed core technologies allow teams to
-            laser-focus and streamline their productivity in a single platform,
-            collaborating at every stage and making more hires at scale. Our
-            highly intuitive product is constantly iterating so you can stay far
-            ahead of your competition and propel continuous growth.
+            Recruitment An Alternative Solution’s core technologies, developed
+            specifically for staffing, empower teams to focus and streamline
+            their productivity on a single platform. With seamless collaboration
+            at every stage, your teams can scale their hiring efforts more
+            efficiently. Our user-friendly product is continuously evolving,
+            helping you stay ahead of the competition and drive ongoing growth.
           </p>
         </div>
       </div>

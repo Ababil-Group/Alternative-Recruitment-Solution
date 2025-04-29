@@ -53,18 +53,18 @@ export default function Onboarding() {
                 ONBOARDING
               </span>
               <h1 className="text-3xl md:text-3xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Rapid and reliable onboarding
+                Efficient and Reliable Onboarding
               </h1>
 
               <div className="space-y-6">
                 <p className="text-lg text-white/80">
-                  Our dynamic middle-office software accelerates the hiring
-                  cycle, automating document selection and simplifying the
-                  candidate experience. Robust and responsive, it wraps around
-                  your company&apos;s best practices and adjusts according to
-                  ensure easy compliance based on a variety of factors— your
-                  clients&apos; preferences, local requirements, tax categories,
-                  and more— with no heavy administrative workload.
+                  Our dynamic middle-office software streamlines the hiring
+                  process, automating document selection and simplifying the
+                  candidate experience. Built to be both robust and adaptable,
+                  it aligns with your company’s best practices and ensures
+                  compliance across various factors—such as client preferences,
+                  local regulations, tax categories, and more—without the burden
+                  of heavy administrative work.
                 </p>
 
                 <ul className="space-y-4">
@@ -76,8 +76,8 @@ export default function Onboarding() {
                     viewport={{ once: true }}>
                     <FiArrowRight className="text-white w-10 h-6 mt-1 flex-shrink-0" />
                     <span className="text-white/80">
-                      Guide and track your candidates through a traceable
-                      paperless, and mobile-friendly process.
+                      Guide and track candidates through a seamless, paperless,
+                      and mobile-friendly process.
                     </span>
                   </motion.li>
 
@@ -89,8 +89,8 @@ export default function Onboarding() {
                     viewport={{ once: true }}>
                     <FiArrowRight className="text-white w-10 h-6 mt-1 flex-shrink-0" />
                     <span className="text-white/80">
-                      Benefit from encrypted document sharing and signatures and
-                      protect everyone&apos;s privacy every step of the way.
+                      Benefit from encrypted document sharing and signatures,
+                      ensuring privacy at every step.
                     </span>
                   </motion.li>
 
@@ -115,8 +115,8 @@ export default function Onboarding() {
                     viewport={{ once: true }}>
                     <FiArrowRight className="text-white w-10 h-6 mt-1 flex-shrink-0" />
                     <span className="text-white/80">
-                      Harness our integrations with the market&apos;s most
-                      widely adopted background check tools.
+                      Leverage integrations with leading background check tools
+                      in the market.
                     </span>
                   </motion.li>
                 </ul>
