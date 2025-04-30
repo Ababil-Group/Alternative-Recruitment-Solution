@@ -39,7 +39,7 @@ export default function Support() {
                 Email us at
               </p>
               <h4 className="mt-1 text-white font-bold text-[32px] ">
-                support@gmail.com
+                info@alternativerecruitmentsolution.com
               </h4>
             </div>
             <div>
@@ -50,7 +50,7 @@ export default function Support() {
                 Call us at
               </p>
               <h4 className="mt-1 text-white font-bold text-[32px] ">
-                +1 (123) 456-7890
+                +4407459610723, +4407943642473
               </h4>
             </div>
           </div>

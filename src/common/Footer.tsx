@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { FiPhone, FiMail, FiMessageSquare } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+import { FiPhone, FiMail } from "react-icons/fi";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12 px-6 z-100">
       <div className="container mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 mb-12">
           {/* Logo and Contact */}
-          <div className="lg:col-span-2">
+          <div className="md:col-span-4">
             <h2 className="text-3xl font-bold mb-4">
               Recruitment <br /> An Alternative Solution
             </h2>
@@ -17,12 +17,9 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-2">Word to talk?</h3>
               <p className="text-2xl font-bold">+44 7943 642473 </p>
             </div>
-            <div>
+            {/* <div>
               <p className="mb-2">We&apos;re social</p>
               <div className="flex items-center space-x-4">
-                <span className="inline-flex items-center">
-                  in <span className="ml-1">▼</span>
-                </span>
                 <div className="flex space-x-4">
                   <a href="#" className="hover:text-blue-400 transition-colors">
                     <FaFacebook size={20} />
@@ -38,14 +35,14 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Product Links */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4">Product</h3>
             <ul className="space-y-2">
-              {["Our Solution", ,].map((item) => (
+              {[, ,].map((item) => (
                 <li key={item}>
                   <a
                     href="/solution"
@@ -55,13 +52,15 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Company Links */}
-          <div>
+          <div className="md:col-span-4">
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {[
+                { text: "Home", href: "/" },
+                { text: "Our Solution", href: "/solution" },
                 { text: "Contact Us", href: "/contact" },
                 { text: "Help Center", href: "/support" },
                 { text: "FAQs", href: "/faq" },
@@ -78,23 +77,23 @@ export default function Footer() {
           </div>
 
           {/* Resources Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">📞 Quick Connect:</h3>
+          <div className="md:col-span-4">
+            <h3 className="text-lg font-semibold mb-4">Quick Connect:</h3>
             <ul className="space-y-2">
               {[
                 {
-                  text: "Call: +44 7943 642473",
+                  text: " +44 7943 642473",
                   icon: <FiPhone className="inline mr-2" />,
                   href: "tel:+447943642473",
                 },
                 {
-                  text: "Email: info@alternativerecruitmentsolution.com",
+                  text: "info@alternativerecruitmentsolution.com",
                   icon: <FiMail className="inline mr-2" />,
                   href: "mailto:info@alternativerecruitmentsolution.com",
                 },
                 {
-                  text: "WhatsApp: +44 7943 642473",
-                  icon: <FiMessageSquare className="inline mr-2" />,
+                  text: "+44 7943 642473",
+                  icon: <FaWhatsapp className="inline mr-2" />,
                   href: "https://wa.me/447943642473",
                 },
               ].map((item) => (

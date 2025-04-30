@@ -58,7 +58,9 @@ export default function ContactLocation() {
                 <div className="bg-white p-6 rounded-lg">
                   <div className="flex items-center gap-3 mb-3">
                     <FiPhone className="text-blue-600" />
-                    <span className="text-gray-600">Call: +44 7943 642473</span>
+                    <span className="text-gray-600">
+                      Call: +4407459610723, +44 7943 642473
+                    </span>
                   </div>
                   <div className="flex items-center gap-3 mb-3">
                     <FaWhatsapp className="text-blue-600" />
