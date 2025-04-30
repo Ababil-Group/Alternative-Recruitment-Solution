@@ -10,14 +10,14 @@ export default function Financial() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Left side with centered image */}
-          <div className="lg:w-1/2 flex justify-center min-h-[500px]">
+          <div className="lg:w-1/2 flex justify-center min-h-[400px]">
             <div className="relative w-full h-full">
               <Image
-                src="/images/financial.jpg"
+                src="/images/financial.png"
                 alt="Financial illustration"
                 width={500}
                 height={500}
-                className="object-contain"
+                className="w-[700px] h-[700px] object-contain"
               />
             </div>
           </div>
