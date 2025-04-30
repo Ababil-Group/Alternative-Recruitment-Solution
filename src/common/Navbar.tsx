@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
 import Logo from "../../public/images/logo.png";
 import Image from "next/image";
+
 type MenuItem = {
   name: string;
   link?: string;
@@ -17,6 +18,20 @@ type MenuItem = {
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleDropdown = (index: number) => {
     setOpenDropdown(openDropdown === index ? null : index);
@@ -36,9 +51,18 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed  w-full z-50">
-      <nav className="bg-transparent transition-all duration-300  backdrop-blur-sm  ">
-        <div className="container border-b border-gray-200 mx-auto px-4">
+    <header
+      className={`fixed w-full z-50 ${
+        isScrolled ? "bg-background" : "bg-transparent"
+      } transition-all duration-300`}>
+      <nav
+        className={`transition-all duration-300 backdrop-blur-sm ${
+          isScrolled ? "" : "bg-transparent"
+        }`}>
+        <div
+          className={`container mx-auto px-4 ${
+            isScrolled ? "border-b border-gray-200" : ""
+          }`}>
           <div className="flex justify-between items-center py-4">
             {/* Logo on left */}
             <div className="flex items-center">
@@ -60,7 +84,9 @@ export default function Navbar() {
                   {item.dropdown ? (
                     <>
                       <button
-                        className="text-text-color  font-medium transition-colors"
+                        className={`${
+                          isScrolled ? "text-text-color" : "text-white"
+                        } font-medium transition-colors`}
                         onClick={() => toggleDropdown(index)}
                         onMouseEnter={() => setOpenDropdown(index)}>
                         {item.name}
@@ -78,7 +104,7 @@ export default function Navbar() {
                               <a
                                 key={subIndex}
                                 href={subItem.link}
-                                className="block px-4 py-2 text--text-color hover:bg-[#001856]">
+                                className="block px-4 py-2 text-text-color hover:bg-[#001856]">
                                 {subItem.name}
                               </a>
                             ))}
@@ -90,7 +116,9 @@ export default function Navbar() {
                     <div>
                       <a
                         href={item.link}
-                        className="text-text-color hover:text-blue-300 font-medium transition-colors">
+                        className={`${
+                          isScrolled ? "text-text-color" : "text-white"
+                        } hover:text-blue-300 font-medium transition-colors`}>
                         {item.name}
                       </a>
                     </div>
@@ -103,7 +131,9 @@ export default function Navbar() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-gray-200 focus:outline-none"
+                className={`${
+                  isScrolled ? "text-text-color" : "text-white"
+                } focus:outline-none`}
                 aria-label="Toggle menu">
                 {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
               </button>
@@ -127,7 +157,9 @@ export default function Navbar() {
                       <>
                         <button
                           onClick={() => toggleDropdown(index)}
-                          className="flex justify-between items-center w-full text-white font-medium">
+                          className={`flex justify-between items-center w-full ${
+                            isScrolled ? "text-text-color" : "text-white"
+                          } font-medium`}>
                           {item.name}
                           <motion.span
                             animate={{
@@ -147,7 +179,11 @@ export default function Navbar() {
                                 <a
                                   key={subIndex}
                                   href={subItem.link}
-                                  className="block py-2 text-white hover:text-gray-900">
+                                  className={`block py-2 ${
+                                    isScrolled
+                                      ? "text-text-color"
+                                      : "text-white"
+                                  } hover:text-gray-900`}>
                                   {subItem.name}
                                 </a>
                               ))}
@@ -158,7 +194,9 @@ export default function Navbar() {
                     ) : (
                       <a
                         href={item.link}
-                        className="block text-white font-medium">
+                        className={`block ${
+                          isScrolled ? "text-text-color" : "text-white"
+                        } font-medium`}>
                         {item.name}
                       </a>
                     )}
