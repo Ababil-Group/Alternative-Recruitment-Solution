@@ -82,9 +82,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 {
-                  text: " +44 7943 642473",
+                  text: "+4407459610723, +4407943642473",
                   icon: <FiPhone className="inline mr-2" />,
-                  href: "tel:+447943642473",
+                  href: "tel:+4407459610723",
                 },
                 {
                   text: "info@alternativerecruitmentsolution.com",
