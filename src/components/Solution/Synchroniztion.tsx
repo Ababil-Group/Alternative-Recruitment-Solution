@@ -60,7 +60,7 @@ export default function Synchroniztion() {
           <div className="lg:w-1/2">
             <div className="rounded-xl p-8 flex items-center justify-center h-96">
               <Image
-                src="/images/Synchroniztion.png"
+                src="/images/synchroniztion.png"
                 alt="ATS Dashboard"
                 width={600}
                 height={400}

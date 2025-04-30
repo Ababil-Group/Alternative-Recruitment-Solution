@@ -8,52 +8,51 @@ export default function Faq() {
 
   const faqs: { question: string; answer: string }[] = [
     {
-      question: "What is JobDiva?",
+      question:
+        "What sets Recruitment An  Alternative Solution’s resume search engine apart from others?",
       answer:
-        "JobDiva is a leading talent acquisition platform that combines applicant tracking, CRM, and analytics in one powerful solution.",
+        " Recruitment An  Alternative Solution uses proprietary AI-powered resume search technology with advanced semantic search and natural language processing, ensuring more accurate and relevant candidate results.",
     },
     {
       question:
-        "What makes JobDiva's resume search engine different from other resume search engine products?",
+        "How does Recruitment An  Alternative Solution give my company a competitive edge?",
       answer:
-        "Our proprietary AI-powered search technology delivers more accurate, relevant results with natural language processing and semantic search capabilities.",
-    },
-    {
-      question: "How will JobDiva give my company a competitive advantage?",
-      answer:
-        "JobDiva streamlines your recruitment workflow, reduces time-to-hire, and provides actionable insights to outperform competitors.",
-    },
-    {
-      question: "How can JobDiva save my company money?",
-      answer:
-        "By automating manual processes, reducing dependency on external job boards, and improving recruiter productivity.",
-    },
-    {
-      question: "What are JobDiva's complementary characteristics?",
-      answer:
-        "Seamless integrations with major HR systems, mobile accessibility, and configurable workflows tailored to your business needs.",
+        " By streamlining your recruitment process, reducing time-to-hire, and providing real-time recruitment insights, Recruitment An  Alternative Solution helps you stay ahead in a competitive staffing market.",
     },
     {
       question:
-        "How much behavior change and retraining will be necessary to fully utilize JobDiva?",
+        "How can Recruitment An  Alternative Solution help reduce recruitment costs?",
       answer:
-        "Our intuitive interface requires minimal training, and our customer success team provides onboarding and ongoing support.",
-    },
-    {
-      question: "How does JobDiva retrieve resumes for me?",
-      answer:
-        "JobDiva aggregates resumes from multiple sources including job boards, your career site, and direct submissions.",
+        " Recruitment An  Alternative Solution improves recruiter productivity by automating manual tasks, minimizing reliance on external job boards, and simplifying the hiring process all leading to cost-effective staffing solutions.",
     },
     {
       question:
-        "How quickly after resumes are sent to my JobDiva account can they be searched and accessed?",
+        "What key features complement Recruitment An  Alternative Solution’s core platform?",
       answer:
-        "Resumes are processed and made searchable in real-time, typically within seconds of submission.",
+        " Recruitment An  Alternative Solution offers seamless HR integrations, mobile access, and customizable workflows tailored to your organization’s staffing needs.",
     },
     {
-      question: "Can JobDiva retrieve resumes from any job board?",
+      question:
+        "Will using Recruitment An  Alternative Solution require significant retraining?",
       answer:
-        "Yes, JobDiva integrates with all major job boards and can parse resumes from virtually any source.",
+        " Not at all. Recruitment An  Alternative Solution features a user-friendly interface that requires minimal training. Our dedicated customer success team ensures smooth onboarding and continuous support.",
+    },
+    {
+      question:
+        "How does Recruitment An  Alternative Solution collect resumes?",
+      answer:
+        " Recruitment An  Alternative Solution aggregates resumes from multiple channels, including job boards, your company’s career site, and direct submissions.",
+    },
+    {
+      question: "How fast are resumes available after submission?",
+      answer:
+        " Resumes are typically processed and indexed in real-time available for search within seconds.",
+    },
+    {
+      question:
+        "Can Recruitment An  Alternative Solution retrieve resumes from any job board?",
+      answer:
+        " Yes, Recruitment An  Alternative Solution integrates with all major job boards and supports resume parsing from virtually any source.",
     },
   ];
 
@@ -71,7 +70,7 @@ export default function Faq() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 bg-b">
           <h1 className="text-3xl  md:text-4xl font-bold text-text-color mt-10">
-            What is JobDiva?
+            What is Recruitment An Alternative Solution?
           </h1>
           <p className="text-lg mt-3 text-gray-200">
             Frequently asked questions about our platform
