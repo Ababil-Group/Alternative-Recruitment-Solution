@@ -84,7 +84,7 @@ export default function Footer() {
                 {
                   text: "+4407459610723, +4407943642473",
                   icon: <FiPhone className="inline mr-2" />,
-                  href: "tel:+4407459610723",
+                  // href: "tel:+4407459610723",
                 },
                 {
                   text: "info@alternativerecruitmentsolution.com",

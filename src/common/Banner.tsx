@@ -26,7 +26,7 @@ export const Banner: React.FC<BannerProps> = ({
   return (
     <div
       className={cn(
-        "relative container mt-20 border border-gray-50 rounded-3xl w-full min-h-[400px] flex items-center bg-background overflow-hidden",
+        "relative container mt-20 border border-gray-50 rounded-3xl w-full lg:min-h-[400px] sm:min-h-[250px] flex items-center bg-background overflow-hidden",
         className
       )}>
       {/* Left Image */}
@@ -57,7 +57,7 @@ export const Banner: React.FC<BannerProps> = ({
           className={cn("py-12", imageUrl ? "text-left" : "text-center")}>
           <h1
             className={cn(
-              `${textColor} text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight`
+              `${textColor} sm:text-[25px] md:text-4xl lg:text-6xl font-bold mb-8 leading-tight`
             )}>
             {titleLines.map((line, index) => (
               <React.Fragment key={index}>
