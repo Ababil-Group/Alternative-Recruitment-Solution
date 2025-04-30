@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FiPhone, FiMail, FiMessageSquare } from "react-icons/fi";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12 px-6 z-100">
       <div className="container mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Logo and Contact */}
           <div className="lg:col-span-2">
             <h2 className="text-3xl font-bold mb-4">
@@ -14,7 +15,7 @@ export default function Footer() {
             </h2>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Word to talk?</h3>
-              <p className="text-2xl font-bold">+1 (800) 123-4567</p>
+              <p className="text-2xl font-bold">+44 7943 642473 </p>
             </div>
             <div>
               <p className="mb-2">We&apos;re social</p>
@@ -46,7 +47,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {["Our Solution", ,].map((item) => (
                 <li key={item}>
-                  <a href="#" className="hover:text-blue-400 transition-colors">
+                  <a
+                    href="/solution"
+                    className="hover:text-blue-400 transition-colors">
                     {item}
                   </a>
                 </li>
@@ -58,10 +61,16 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {["Contact Us", "Help Center", "FAQs"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="hover:text-blue-400 transition-colors">
-                    {item}
+              {[
+                { text: "Contact Us", href: "/contact" },
+                { text: "Help Center", href: "/support" },
+                { text: "FAQs", href: "/faq" },
+              ].map((item) => (
+                <li key={item.text}>
+                  <a
+                    href={item.href}
+                    className="hover:text-blue-400 transition-colors">
+                    {item.text}
                   </a>
                 </li>
               ))}
@@ -69,18 +78,37 @@ export default function Footer() {
           </div>
 
           {/* Resources Links */}
-          {/* <div>
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">📞 Quick Connect:</h3>
             <ul className="space-y-2">
-              {["Book", "Case Studies", "Blog"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="hover:text-blue-400 transition-colors">
-                    {item}
+              {[
+                {
+                  text: "Call: +44 7943 642473",
+                  icon: <FiPhone className="inline mr-2" />,
+                  href: "tel:+447943642473",
+                },
+                {
+                  text: "Email: info@alternativerecruitmentsolution.com",
+                  icon: <FiMail className="inline mr-2" />,
+                  href: "mailto:info@alternativerecruitmentsolution.com",
+                },
+                {
+                  text: "WhatsApp: +44 7943 642473",
+                  icon: <FiMessageSquare className="inline mr-2" />,
+                  href: "https://wa.me/447943642473",
+                },
+              ].map((item) => (
+                <li key={item.text}>
+                  <a
+                    href={item.href}
+                    className="hover:text-blue-400 transition-colors flex items-center">
+                    {item.icon}
+                    {item.text}
                   </a>
                 </li>
               ))}
             </ul>
-          </div> */}
+          </div>
         </div>
 
         {/* Bottom Section */}

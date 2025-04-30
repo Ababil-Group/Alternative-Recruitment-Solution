@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 export default function ContactLocation() {
   return (
     <div className="relative  w-full py-16 h-full">
@@ -29,20 +30,19 @@ export default function ContactLocation() {
                   <div className="bg-white p-6 rounded-lg">
                     <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
                       <FiMapPin className="text-blue-600" />
-                      Headquarters
+                      Office
                     </h2>
                     <p className="text-gray-600 mb-2">
                       Recruitment An Alternative Solution, Inc.
                     </p>
-                    <p className="text-gray-600 mb-2">44 Wall Street</p>
                     <p className="text-gray-600 mb-2">
-                      4th floor, New York, NY
+                      23 Basedale Road,Dagenham,
                     </p>
-                    <p className="text-gray-600">10005</p>
+                    <p className="text-gray-600 mb-2">Essex RM9 4QA, UK</p>
                   </div>
 
                   {/* UK Office Box */}
-                  <div className="bg-white p-6 rounded-lg">
+                  {/* <div className="bg-white p-6 rounded-lg">
                     <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
                       <FiMapPin className="text-blue-600" />
                       UK Office
@@ -51,29 +51,32 @@ export default function ContactLocation() {
                     <p className="text-gray-600 mb-2">Lower Ground Floor</p>
                     <p className="text-gray-600 mb-2">London, WC2A 2JR</p>
                     <p className="text-gray-600">United Kingdom</p>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Contact Info Box */}
                 <div className="bg-white p-6 rounded-lg">
                   <div className="flex items-center gap-3 mb-3">
                     <FiPhone className="text-blue-600" />
-                    <span className="text-gray-600">
-                      Toll free: 866-562-3482
-                    </span>
+                    <span className="text-gray-600">Call: +44 7943 642473</span>
                   </div>
                   <div className="flex items-center gap-3 mb-3">
-                    <FiPhone className="text-blue-600" />
-                    <span className="text-gray-600">Fax: 212-306-0191</span>
+                    <FaWhatsapp className="text-blue-600" />
+                    <span className="text-gray-600">
+                      Whatsapp: +44 7943 642473
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <FiMail className="text-blue-600" />
-                    <span className="text-gray-600">contact@jobdiva.com</span>
+                    <span className="text-gray-600">
+                      {" "}
+                      info@alternativerecruitmentsolution.com
+                    </span>
                   </div>
                 </div>
 
                 {/* Email Us Box */}
-                <div className="bg-white p-6 rounded-lg">
+                {/* <div className="bg-white p-6 rounded-lg">
                   <h2 className="text-xl font-semibold text-gray-900 mb-4">
                     Email Us
                   </h2>
@@ -82,7 +85,7 @@ export default function ContactLocation() {
                     <p className="text-blue-600">sales@jobdiva.com</p>
                     <p className="text-blue-600">support@jobdiva.com</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
